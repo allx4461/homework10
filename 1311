@@ -37,7 +37,41 @@ def t3731():
             if i>m:
                 m=i
     print(k,m) 
-   
+a=open('17_4.txt')
+m=10000000000000000000000
+k=0
+des=0
+su=0
+for x in a:
+    x=int(x)
+    if x>100:
+        if x%100//10<=4 and (x//100%10>=3 and x//100%10<=7):
+            k+=1
+            if x<m:
+                m=min(x,m)
+print(k,m)
+a=open('17_4.txt')
+for x in a:
+    x=int(x)
+    if (x%3==0 and x%9!=0) and x%10>=4:
+        k+=1
+        su+=x
+print(k,su//k)
+ 
+mx=0
+su=0
+a=open('17_4.txt')
+for x in a:
+    x=int(x)
+    if x%13==4 and x%8==1:
+        su+=x
+        if x>mx:
+            mx=x 
+print(mx,su)
+        
+
+
+
 t3575()
 t3734()
 t3732()
