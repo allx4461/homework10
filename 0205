@@ -1,0 +1,25 @@
+#14
+with open('1317.txt') as f:
+    a=f.readline()
+    for i in range(len(a)-1):
+        if ord(a[i])>=ord(a[i+1]):
+            k+=1
+        else:
+            mp=max(mp,k)
+            k=0
+    print(mp)
+#15
+with open('1317.txt') as f:
+    a=f.readline()
+    for i in range(len(a)-1):
+        if a[i]!='Z' and a[i+1]!='Z':
+            k+=1
+        else:
+            mp=max(mp,k)
+            k=0
+    print(mp)
+#16
+
+
+
+
